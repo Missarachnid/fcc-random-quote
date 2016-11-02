@@ -1,0 +1,89 @@
+html {
+  height: 100%;
+  text-align: center;
+}
+
+body {
+  font-family: 'Lora', serif;
+  font-size: 2.5em;
+  color: white;
+  height: 100%;
+}
+
+.divBg {
+  background: linear-gradient( rgba(21, 127, 209, 0.7), rgba(0, 0, 0, 0) ), url('https://crossorigin.me/http://www.mmkepler.com/other/sea.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  min-height: 100%;
+}
+
+.main {
+  margin-top: 5%;
+}
+
+
+
+.btn-default {
+  background: none;
+  border: 3px solid white;
+  color: white;
+}
+
+#intro {
+  padding: 20px;
+}
+
+.button {
+  padding: 20px;
+}
+
+.quoteHolder {
+  padding: 10px;
+  min-height: 250px;
+  width: 70%;
+  margin: 0 auto;
+  display: block;
+}
+
+#quotePlace {
+  font-size: 1em;
+}
+
+#authorPlace {
+  font-size: .75em;
+}
+
+.twitDiv {
+  padding: 10px;
+  min-height: 60px;
+
+}
+
+#credit {
+  font-size: .6em;
+  height: 50px;
+  padding: 10px ;
+
+}
+
+#credit a {
+  color: #5db0ef;
+}
+
+@media only screen and (max-width: 992px) {
+  body {
+    height: 50%;
+  }
+  .main {
+  padding-top: 10px;
+  margin: 0;
+        }
+  .button {
+  padding: 10px;
+        }
+  .quoteHolder {
+    width: 90%;
+    min-height: 200px;
+  }
+    }
