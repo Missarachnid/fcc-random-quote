@@ -23,18 +23,36 @@ $("#quote").click(function(event) {
   $("#authorPlace").empty();
   $("#twitter").empty();
   //get quote from api
-  $.get("https://crossorigin.me/http://www.stands4.com/services/v2/quotes.php?uid=4919&tokenid=BiOk346Hd2rGDdL7&searchtype=RANDOM")
+  /*$.get("https://crossorigin.me/http://www.stands4.com/services/v2/quotes.php?uid=4919&tokenid=BiOk346Hd2rGDdL7&searchtype=RANDOM")
     .done(function(data) {
       //seperate quote and author strings
       var quoteText = data.getElementsByTagName("quote")[0].childNodes[0].nodeValue;
       var quoteAuthor = data.getElementsByTagName("author")[0].childNodes[0].nodeValue;
       //place quote and author in divs and animate text 
-      $("#quotePlace")/*.delay(200)*/.fadeTo("fast", 0.07, function() {
+      $("#quotePlace").delay(200).fadeTo("fast", 0.07, function() {
         $("#quotePlace").append('"' + quoteText + '"');
         $("#quotePlace").animate({
           opacity: 1
         });
+      });*/
+  
+    var quote = function(){
+      $.ajax({
+        method: "GET",
+        url: "https://crossorigin.me/http://www.stands4.com/services/v2/quotes.php?uid=4919&tokenid=BiOk346Hd2rGDdL7&searchtype=RANDOM",
+        dataType: "xml"
+      
+      }).done(function(data){
+        var quoteText = data.getElementsByTagName("quote")[0].childNodes[0].nodeValue;
+        var quoteAuthor = data.getElementsByTagName("author")[0].childNodes[0].nodeValue;
+        //place quote and author in divs and animate text 
+        $("#quotePlace").fadeTo("fast", 0.07, function() {
+        $("#quotePlace").append('"' + quoteText + '"');
+        $("#quotePlace").animate({
+          opacity: 1
       });
+       quote();
+    };
 
       $("#authorPlace")/*.delay(100)*/.fadeTo("fast", 0.07, function() {
         $("#authorPlace").append(" -" + quoteAuthor);
