@@ -49,7 +49,7 @@ $("#quote").click(function(event) {
           $("#quotePlace").fadeTo("fast", 0.07, function() {
           $("#quotePlace").append('"' + quoteText + '"');
           $("#quotePlace").animate({
-            opacity: "1"
+            opacity: "1")};
         });
       };
       quote();
