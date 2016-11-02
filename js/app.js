@@ -1,5 +1,8 @@
 $(document).ready(function(){
 
+    var quoteText = data.getElementsByTagName("quote")[0].childNodes[0].nodeValue;
+    var quoteAuthor = data.getElementsByTagName("author")[0].childNodes[0].nodeValue;
+    
     //twitter button code
     window.twttr = (function(d, s, id) {
         var js, fjs = d.getElementsByTagName(s)[0],
@@ -26,8 +29,8 @@ $(document).ready(function(){
         dataType: "xml"
           
         }).done(function(data){
-          var quoteText = data.getElementsByTagName("quote")[0].childNodes[0].nodeValue;
-          var quoteAuthor = data.getElementsByTagName("author")[0].childNodes[0].nodeValue;
+          //var quoteText = data.getElementsByTagName("quote")[0].childNodes[0].nodeValue;
+          //var quoteAuthor = data.getElementsByTagName("author")[0].childNodes[0].nodeValue;
           //place quote and author in divs and animate text 
           $("#quotePlace").fadeTo("fast", 0.07, function() {
           $("#quotePlace").append('"' + quoteText + '"');
@@ -70,6 +73,8 @@ $(document).ready(function(){
       $("#quotePlace").empty();
       $("#authorPlace").empty();
       $("#twitter").empty();
+        quoteText = "";
+        quoteAuthor = "";
       quote();
     });
 
