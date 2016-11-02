@@ -24,6 +24,7 @@ $(document).ready(function(){
         method: "GET",
         url: "https://crossorigin.me/http://www.stands4.com/services/v2/quotes.php?uid=4919&tokenid=BiOk346Hd2rGDdL7&searchtype=RANDOM",
         dataType: "xml",
+        origin: "https://missarachnid.github.io/fcc-random-quote/"
         
         }).done(function(data){
           var quoteText = data.getElementsByTagName("quote")[0].childNodes[0].nodeValue;
