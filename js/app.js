@@ -23,7 +23,6 @@ $(document).ready(function(){
       $.ajax({
         method: "GET",
         url: "http://www.stands4.com/services/v2/quotes.php?uid=4919&tokenid=BiOk346Hd2rGDdL7&searchtype=RANDOM",
-        dataType: "xml",
         origin: "https://missarachnid.github.io/fcc-random-quote/"
         
         }).done(function(data){
@@ -35,7 +34,7 @@ $(document).ready(function(){
           $("#quotePlace").animate({
             opacity: "1"});
             });
-          $("#authorPlace").delay(100).fadeTo("fast", 0.07, function() {
+          $("#authorPlace").fadeTo("fast", 0.07, function() {
             $("#authorPlace").append(" -" + quoteAuthor);
             $("#authorPlace").animate({
               opacity: 1
