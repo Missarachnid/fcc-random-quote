@@ -22,8 +22,6 @@ body {
   margin-top: 5%;
 }
 
-
-
 .btn-default {
   background: none;
   border: 3px solid white;
@@ -57,14 +55,12 @@ body {
 .twitDiv {
   padding: 10px;
   min-height: 60px;
-
 }
 
 #credit {
   font-size: .6em;
   height: 50px;
   padding: 10px ;
-
 }
 
 #credit a {
@@ -75,15 +71,19 @@ body {
   body {
     height: 50%;
   }
+  
   .main {
   padding-top: 10px;
   margin: 0;
         }
+  
   .button {
   padding: 10px;
         }
+  
   .quoteHolder {
     width: 90%;
     min-height: 200px;
   }
+  
     }
