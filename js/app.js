@@ -43,19 +43,17 @@ $("#quote").click(function(event) {
         dataType: "xml",
         Access-Control-Allow-Headers: "Origin, X-Requested-With, Content-Type, Accept",
         
-      
-      }).done(function(data){
-        var quoteText = data.getElementsByTagName("quote")[0].childNodes[0].nodeValue;
-        var quoteAuthor = data.getElementsByTagName("author")[0].childNodes[0].nodeValue;
-        //place quote and author in divs and animate text 
-        $("#quotePlace").fadeTo("fast", 0.07, function() {
-        $("#quotePlace").append('"' + quoteText + '"');
-        $("#quotePlace").animate({
-          opacity: 1
-      });
-       quote();
-    };
-
+        }).done(function(data){
+          var quoteText = data.getElementsByTagName("quote")[0].childNodes[0].nodeValue;
+          var quoteAuthor = data.getElementsByTagName("author")[0].childNodes[0].nodeValue;
+          //place quote and author in divs and animate text 
+          $("#quotePlace").fadeTo("fast", 0.07, function() {
+          $("#quotePlace").append('"' + quoteText + '"');
+          $("#quotePlace").animate({
+            opacity: "1"
+        });
+      };
+      quote();
       $("#authorPlace")/*.delay(100)*/.fadeTo("fast", 0.07, function() {
         $("#authorPlace").append(" -" + quoteAuthor);
         $("#authorPlace").animate({
