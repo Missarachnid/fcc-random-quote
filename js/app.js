@@ -23,8 +23,9 @@ $(document).ready(function(){
       $.ajax({
         method: "GET",
         url: "http://www.stands4.com/services/v2/quotes.php?uid=4919&tokenid=BiOk346Hd2rGDdL7&searchtype=RANDOM",
-        origin: "https://missarachnid.github.io/fcc-random-quote/"
-        
+        origin: "https://missarachnid.github.io/fcc-random-quote/",
+        dataType: "xml"
+          
         }).done(function(data){
           var quoteText = data.getElementsByTagName("quote")[0].childNodes[0].nodeValue;
           var quoteAuthor = data.getElementsByTagName("author")[0].childNodes[0].nodeValue;
