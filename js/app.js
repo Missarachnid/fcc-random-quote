@@ -23,7 +23,7 @@ $("#quote").click(function(event) {
   $("#authorPlace").empty();
   $("#twitter").empty();
   //get quote from api
-  $.get("http://crossorigin.me/http://www.stands4.com/services/v2/quotes.php?uid=4919&tokenid=BiOk346Hd2rGDdL7&searchtype=RANDOM")
+  $.get("https://crossorigin.me/http://www.stands4.com/services/v2/quotes.php?uid=4919&tokenid=BiOk346Hd2rGDdL7&searchtype=RANDOM")
     .done(function(data) {
       //seperate quote and author strings
       var quoteText = data.getElementsByTagName("quote")[0].childNodes[0].nodeValue;
