@@ -1,7 +1,6 @@
 $(document).ready(function(){
 
-    
-    //twitter button code
+    //twitter button widget
     window.twttr = (function(d, s, id) {
         var js, fjs = d.getElementsByTagName(s)[0],
         t = window.twttr || {};
@@ -19,7 +18,7 @@ $(document).ready(function(){
         return t;
     }(document, "script", "twitter-wjs"));
     
-//quote retriever
+//quote creating function
     var quote = function(){
       $.ajax({
         method: "GET",
