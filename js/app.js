@@ -29,14 +29,14 @@ $("#quote").click(function(event) {
       var quoteText = data.getElementsByTagName("quote")[0].childNodes[0].nodeValue;
       var quoteAuthor = data.getElementsByTagName("author")[0].childNodes[0].nodeValue;
       //place quote and author in divs and animate text 
-      $("#quotePlace").delay(200).fadeTo("fast", 0.07, function() {
+      $("#quotePlace")/*.delay(200)*/.fadeTo("fast", 0.07, function() {
         $("#quotePlace").append('"' + quoteText + '"');
         $("#quotePlace").animate({
           opacity: 1
         });
       });
 
-      $("#authorPlace").delay(100).fadeTo("fast", 0.07, function() {
+      $("#authorPlace")/*.delay(100)*/.fadeTo("fast", 0.07, function() {
         $("#authorPlace").append(" -" + quoteAuthor);
         $("#authorPlace").animate({
           opacity: 1
