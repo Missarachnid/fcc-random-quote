@@ -29,7 +29,9 @@ $(document).ready(function(){
         }
         }).done(function(data){
           console.log(data);
-         /var quoteText = data.quote;
+          console.log(data.quote);
+          console.log(data.author);
+           var quoteText = data.quote;
           var quoteAuthor = data.author;
           //place quote and author in divs and animate text 
           $("#quotePlace").fadeTo("fast", 0.07, function() {
