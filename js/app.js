@@ -49,7 +49,7 @@ $(document).ready(function(){
         //put together variable for twitter button
         var totalTweet = '"' + quoteText + '" -' + quoteAuthor;
 
-      $('#twitter').fadeIn("fast", 0.07, function() {
+      $('#twitter').delay(200).fadeIn("fast", 0.07, function() {
         $('#twitter').append('<a></a>');
         $('#twitter a').attr('id', 'twitterButton');
         $("#twitterButton").attr('href', 'https://twitter.com/share');
