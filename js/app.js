@@ -29,8 +29,8 @@ $(document).ready(function(){
         }
         }).done(function(data){
           console.log(data);
-         /* var quoteText = data.getElementsByTagName("quote")[0].childNodes[0].nodeValue;
-          var quoteAuthor = data.getElementsByTagName("author")[0].childNodes[0].nodeValue;
+         /var quoteText = data.quote;
+          var quoteAuthor = data.author;
           //place quote and author in divs and animate text 
           $("#quotePlace").fadeTo("fast", 0.07, function() {
           $("#quotePlace").append('"' + quoteText + '"');
@@ -59,7 +59,7 @@ $(document).ready(function(){
         });
         twttr.widgets.load();
 
-      });*/
+      });
           
     })
     .fail(function() {
