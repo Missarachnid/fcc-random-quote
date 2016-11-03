@@ -28,10 +28,7 @@ $(document).ready(function(){
         "X-Mashape-Authorization": "sDqR3afz9omshFut2UI2nrXDzr1Kp1Qu8Gajsnb8XFNqvr8Ftl"
         }
         }).done(function(data){
-          console.log(data);
-          console.log(data.quote);
-          console.log(data.author);
-           var quoteText = data.quote;
+          var quoteText = data.quote;
           var quoteAuthor = data.author;
           //place quote and author in divs and animate text 
           $("#quotePlace").fadeTo("fast", 0.07, function() {
