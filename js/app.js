@@ -75,7 +75,7 @@ $(document).ready(function(){
       $("#quotePlace").empty();
       $("#authorPlace").empty();
       $("#twitter").empty();
-
+        
       quote();
     });
 
