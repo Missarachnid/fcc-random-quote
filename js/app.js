@@ -25,7 +25,7 @@ $(document).ready(function(){
         url: "https://andruxnet-random-famous-quotes.p.mashape.com/?cat=famous/",
         dataType: "xml",
         headers: {
-        "X-Mashape-Key": "sDqR3afz9omshFut2UI2nrXDzr1Kp1Qu8Gajsnb8XFNqvr8Ftl";
+        "X-Mashape-Key": "sDqR3afz9omshFut2UI2nrXDzr1Kp1Qu8Gajsnb8XFNqvr8Ftl"
         }
         }).done(function(data){
           console.log(data);
