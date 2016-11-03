@@ -22,10 +22,10 @@ $(document).ready(function(){
     var quote = function(){
       $.ajax({
         method: "GET",
-        url: "https://andruxnet-random-famous-quotes.p.mashape.com/?cat=famous/",
-        dataType: "xml",
+        url: "https://andruxnet-random-famous-quotes.p.mashape.com/?cat=famous",
+        dataType: "json",
         headers: {
-        "X-Mashape-Key": "sDqR3afz9omshFut2UI2nrXDzr1Kp1Qu8Gajsnb8XFNqvr8Ftl"
+        "X-Mashape-Authorization": "sDqR3afz9omshFut2UI2nrXDzr1Kp1Qu8Gajsnb8XFNqvr8Ftl"
         }
         }).done(function(data){
           console.log(data);
