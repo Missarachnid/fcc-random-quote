@@ -22,11 +22,14 @@ $(document).ready(function(){
     var quote = function(){
       $.ajax({
         method: "GET",
-        url: "https://crossorigin.me/http://www.stands4.com/services/v2/quotes.php?uid=4919&tokenid=BiOk346Hd2rGDdL7&searchtype=RANDOM",
-        dataType: "xml"
-          
+        url: "https://andruxnet-random-famous-quotes.p.mashape.com/?cat=famous/",
+        dataType: "xml",
+        headers: {
+        "X-Mashape-Key": "sDqR3afz9omshFut2UI2nrXDzr1Kp1Qu8Gajsnb8XFNqvr8Ftl";
+        }
         }).done(function(data){
-          var quoteText = data.getElementsByTagName("quote")[0].childNodes[0].nodeValue;
+          console.log(data);
+         /* var quoteText = data.getElementsByTagName("quote")[0].childNodes[0].nodeValue;
           var quoteAuthor = data.getElementsByTagName("author")[0].childNodes[0].nodeValue;
           //place quote and author in divs and animate text 
           $("#quotePlace").fadeTo("fast", 0.07, function() {
@@ -56,7 +59,7 @@ $(document).ready(function(){
         });
         twttr.widgets.load();
 
-      });
+      });*/
           
     })
     .fail(function() {
