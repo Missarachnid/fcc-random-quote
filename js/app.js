@@ -22,7 +22,7 @@ $(document).ready(function(){
     var quote = function(){
       $.ajax({
         method: "GET",
-        url: "http://www.stands4.com/services/v2/quotes.php?uid=4919&tokenid=BiOk346Hd2rGDdL7&searchtype=RANDOM",
+        url: "https://crossorigin.me/http://www.stands4.com/services/v2/quotes.php?uid=4919&tokenid=BiOk346Hd2rGDdL7&searchtype=RANDOM",
         dataType: "xml"
           
         }).done(function(data){
