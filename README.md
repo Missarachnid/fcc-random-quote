@@ -1,4 +1,4 @@
-#Random Qote Machine
+#Random Quote Machine
 This is my entry for Free Code Camp random quote machine project.
 
 ###Built With
