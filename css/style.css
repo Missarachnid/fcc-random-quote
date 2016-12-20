@@ -4,18 +4,17 @@ html {
 }
 
 body {
-  font-family: 'Lora', serif;
-  font-size: 2.5em;
-  color: white;
-  height: 100%;
-}
-
-.divBg {
   background: linear-gradient( rgba(21, 127, 209, 0.7), rgba(0, 0, 0, 0) ), url("../img/sea.jpg");
   background-repeat: no-repeat;
   background-position: center;
-	background-size: cover;
-  min-height: 100%;
+	-webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 100%;
+  font-family: 'Lora', serif;
+  font-size: 2.5em;
+  color: white;
 }
 
 .main {
