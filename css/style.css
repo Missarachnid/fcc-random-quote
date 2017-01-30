@@ -64,6 +64,37 @@ body {
   color: #5db0ef;
 }
 
+.footer{
+  margin-top: 20px;
+  height: 30px;
+}
+
+.links {
+  font-size: 14px;
+  background-color: none;
+  color: white;
+  text-shadow: 1px 1px 1px black, -1px -1px 1px black;
+  border: 3px ridge lightgray;
+  padding: 5px 10px;
+  display: inline-block;
+  margin: 20px 5px 0 5px;
+  text-shadow: none;
+}
+
+.links:hover {
+  color: #5db0ef;
+  text-decoration: none;
+  text-shadow: none;
+}
+
+.links:active, .links:focus {
+  color: white;
+  text-shadow: none;
+  text-decoration: none;
+}
+
+
+
 @media only screen and (max-width: 992px) {
   body {
     height: 50%;
