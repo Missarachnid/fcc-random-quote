@@ -8,7 +8,7 @@ This is my entry for Free Code Camp random quote machine project.
 +  Jquery  
 +  Bootstrap  
 +  Twitter widget  
-+  Stands4 Quotes API
++  Quote API
 
 ###Author
 +  Melissa Kepler a.k.a. Missarachid  
