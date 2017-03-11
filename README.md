@@ -15,6 +15,6 @@ This is my entry for Free Code Camp random quote machine project.
 
 ###Acknowledgements
 +  Free Code Camp
-+ http://www.quotes.net/quotes_api.php
++ Quote API from Andruxnet https://market.mashape.com/andruxnet 
 
 ###Project can be seen here https://missarachnid.github.io/fcc-random-quote/
