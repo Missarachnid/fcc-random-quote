@@ -1,7 +1,7 @@
-#Random Quote Machine
+# Random Quote Machine
 This is my entry for Free Code Camp random quote machine project.
 
-###Built With
+### Built With
 +  HTML  
 +  CSS  
 +  Javascript  
@@ -10,11 +10,11 @@ This is my entry for Free Code Camp random quote machine project.
 +  Twitter widget  
 +  Quote API
 
-###Author
+### Author
 +  Melissa Kepler a.k.a. Missarachid  
 
-###Acknowledgements
+### Acknowledgements
 +  Free Code Camp
 + Quote API from Andruxnet https://market.mashape.com/andruxnet 
 
-###Project can be seen here https://missarachnid.github.io/fcc-random-quote/
+### Project can be seen here https://missarachnid.github.io/fcc-random-quote/
