@@ -25,11 +25,11 @@ $(document).ready(function(){
         url: "https://andruxnet-random-famous-quotes.p.mashape.com/?cat=famous",
         dataType: "json",
         headers: {
-        "X-Mashape-Authorization": "sDqR3afz9omshFut2UI2nrXDzr1Kp1Qu8Gajsnb8XFNqvr8Ftl"
+        "X-Mashape-Authorization": "bxtpL1rWyOmshRIQ3pZA34sWtWjrp1IxNlxjsn59G3IkpQ2Ut7"
         }
         }).done(function(data){
-          var quoteText = data.quote;
-          var quoteAuthor = data.author;
+          var quoteText = data[0].quote;
+          var quoteAuthor = data[0].author;
           //place quote and author in divs and animate text 
           $("#quotePlace").fadeTo("fast", 0.07, function() {
           $("#quotePlace").append('"' + quoteText + '"');
